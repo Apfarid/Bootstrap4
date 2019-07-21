@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Collapse</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-6">
+                <p>
+                    <a href="#bloque1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque1" class="btn btn-primary">Bloque 1</a> <!-- Estos atributos son necesarios para crear el collapse-->
+                </p>
+                <div id="bloque1" class="collapse">
+                    <div class="card card-body">
+                        <h2>Titulo</h2>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <p>
+                    <a href="#bloque2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque2" class="btn btn-primary">Bloque 2</a> <!-- Estos atributos son necesarios para crear el collapse-->
+                </p>
+                <div id="bloque2" class="collapse">
+                    <div class="card card-body">
+                        <h2>Titulo</h2>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <div class="" id="acordion">
+                    <!-- Card # 1-->
+                    <div class="card">
+                        <div class="card-header" id="heading1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Contenido # 1
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse show" id="collapse1" aria-labelledby="heading1" data-parent="#acordion">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum!
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card # 2-->
+                    <div class="card">
+                        <div class="card-header" id="heading2">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    Contenido # 1
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse " id="collapse2" aria-labelledby="heading2" data-parent="#acordion">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum!
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card # 3-->
+                    <div class="card">
+                        <div class="card-header" id="heading3">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    Contenido # 3
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse " id="collapse3" aria-labelledby="heading3" data-parent="#acordion">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum!
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
